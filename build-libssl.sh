@@ -20,9 +20,9 @@
 #
 ###########################################################################
 #  Change values here													  #
-#																		  #
-VERSION="1.0.1e"													      #
-SDKVERSION="7.0"														  #
+#				
+VERSION="1.0.1g"													      #
+SDKVERSION="7.1"														  #
 #																		  #
 ###########################################################################
 #																		  #
@@ -43,6 +43,13 @@ if [ ! -d "$DEVELOPER" ]; then
   echo "sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer"
   exit 1
 fi
+
+case $DEVELOPER in  
+     *\ * )
+           echo "Your Xcode path contains whitespaces, which is not supported."
+           exit 1
+          ;;
+esac
 
 case $CURRENTPATH in  
      *\ * )

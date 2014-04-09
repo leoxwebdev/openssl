@@ -1,4 +1,4 @@
-# OpenSSL-for-iOS
+# OpenSSL-for-iOS [![Build Status](https://travis-ci.org/x2on/OpenSSL-for-iPhone.png)](https://travis-ci.org/x2on/OpenSSL-for-iPhone)
 
 This is a script for using self-compiled builds of the OpenSSL-library on the iPhone. You can build apps with XCode and the official SDK from Apple with this. I also made a small example-app for using the libraries with XCode and the iPhone/iPhone-Simulator.
 
@@ -9,10 +9,10 @@ You must build the OpenSSL-Libraries before running the sample with:
 ./build-libssl.sh
 ```
 
-This repository contains a iOS 7.0 XCode Project with usese the OpenSSL Libaries. The examples uses the MD5 or SHA256-algorithm to calculate an md5 or sha256 hash from an UITextfield.
+This repository contains a iOS 7.1 XCode Project with usese the OpenSSL Libaries. The examples uses the MD5 or SHA256-algorithm to calculate an md5 or sha256 hash from an UITextfield.
 
 ## System support
-**iOS 4.3 - iOS 7.0 (i386, x86_64, armv7, armv7s, armv64) is currently supported.**
+**iOS 4.3 - iOS 7.1 (i386, x86_64, armv7, armv7s, armv64) is currently supported.**
 
 For iOS < 4.3 you must use iOS SDK < 6.0 and an older version of the build script.
 
@@ -21,6 +21,9 @@ For iOS < 4.3 you must use iOS SDK < 6.0 and an older version of the build scrip
 * <http://www.x2on.de/2010/07/13/tutorial-iphone-app-with-compiled-openssl-1-0-0a-library/>
 
 ## Changelog
+* 2014-04-07: OpenSSL 1.0.1g
+* 2014-03-12: iOS 7.1 support
+* 2014-01-07: OpenSSL 1.0.1f
 * 2013-10-12: x86_64 support, Migrate project to iOS 7.0
 * 2013-09-23: iOS 7.0 support
 * 2013-03-01: OpenSSL 1.0.1e, iOS 6.1
